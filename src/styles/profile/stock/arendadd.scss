@@ -1,0 +1,186 @@
+.arend-add{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    height: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    font-size: 12px;
+    .input-container {
+        height: 50px;
+        position: relative;
+        width: 100%;
+      }
+      .input-container-name {
+        height: 50px;
+        position: relative;
+        width: 47%;
+      }
+      
+      .ic1 {
+        margin-top: 20px;
+      }
+    
+      .ic2 {
+        margin-top: 20px;
+      }
+    
+      .input {
+        background-color: #303245;
+        border-radius: 5px;
+        border: 0;
+        color: #FFFFFF;
+        font-size: 14px;
+        height: 60%;
+        outline: 0;
+        padding: 5px 20px 0;
+        width: 100%;
+      }
+    
+      .cut {
+        background-color: #e5e7ec;
+        border-radius: 5px;
+        height: 20px;
+        left: 20px;
+        position: absolute;
+        top: -20px;
+        transform: translateY(0);
+        transition: transform 200ms;
+        width: 115px;
+      }
+      .cutQ {
+        background-color: #15172b;
+        border-radius: 5px;
+        height: 20px;
+        left: 20px;
+        position: absolute;
+        top: -20px;
+        transform: translateY(0);
+        transition: transform 200ms;
+        width: 42px;
+      }
+      
+      .cut-short {
+        width: 50px;
+      }
+      
+      .input:focus ~ .cut,.input:focus ~ .cutQ,
+      .input:not(:placeholder-shown) ~ .cut, .input:not(:placeholder-shown) ~ .cutQ {
+        transform: translateY(14px);
+      }
+      
+      .placeholder {
+        color: #65657b;
+        left: 20px;
+        line-height: 14px;
+        pointer-events: none;
+        position: absolute;
+        transform-origin: 0 50%;
+        transition: transform 200ms, color 200ms;
+        top: 20px;
+      }
+      
+      .input:focus ~ .placeholder,
+      .input:not(:placeholder-shown) ~ .placeholder {
+        transform: translateY(-23px) translateX(10px) scale(0.75);
+      }
+      
+      .input:not(:placeholder-shown) ~ .placeholder {
+        color: #9797a1;
+      }
+      
+      .input:focus ~ .placeholder {
+        color: #396cf8;
+      }
+      
+    &__options{
+
+    }
+    &__item{
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        &_label{
+            font-size: 16px;
+            color: #101827;
+        }
+        &_active-list{
+            background: #303245;
+            margin-top: -4px;
+            border-radius: 0px 0px 5px 5px;
+            overflow: hidden;
+            position: absolute;
+            max-width: 257.5px;
+            width: 100%;
+            z-index: 1;
+        }
+        &_active-list-item{
+            padding: 10px;
+            color: #FFFFFF;
+            background: #303245;
+            &:hover{
+                background: #396cf8;
+            }
+        }
+    }
+
+    &__more-balcony{
+        display: flex;
+        align-items: center;
+        margin-right: 80px;
+        margin-top: 20px;
+        &_svg{
+            background: #e5e7ec;
+            border: 1px solid #101827;
+            padding: 0px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        &_svg-active{
+            background: #396cf8;
+        }
+    }
+}
+.value{
+    display: flex;
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.item{
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.send{
+    background: #396cf8;
+    color: #FFFFFF;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.price{
+    display: flex;
+    &__item{
+        display: flex;
+        align-items: center;
+        margin-right: 200px;
+    }
+}

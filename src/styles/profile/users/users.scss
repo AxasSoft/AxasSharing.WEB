@@ -1,0 +1,129 @@
+.users{
+    width: 100%;
+    display: flex;
+    background: #FFFFFF;
+    flex-direction: column;
+    &__header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    &__search{
+        display: flex;
+        padding: 20px;
+    }
+    &__table{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 20px;
+        border-bottom: 2px solid rgb(213, 213, 213);
+        padding-bottom: 10px;
+    }
+    &__titles{
+        width: 100%;
+        display: flex;
+        color: #00ba5d;
+        font-weight: 600;
+        font-size: 12px;
+        text-align: left;
+        padding: 0px 20px;
+        &_email{
+            width: 20%;
+        }
+        &_name{
+            width: 10%;
+        }
+        &_coins{
+            width: 10%;
+        }
+        &_created{
+            width: 20%;
+        }
+        &_deleted{
+            width: 20%;
+        }
+        &_register{
+            width: 10%;
+        }
+        &_control{
+            width: 15%;
+        }
+    }
+
+    &__list{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: calc(100vh - 270px);
+        overflow-y: auto;
+    }
+    &__item{
+        width: 100%;
+        display: flex;
+        font-size: 13px;
+        padding: 10px 20px;
+        text-align: left;
+        align-items: center;
+        &_email{
+            width: 20%;
+        }
+        &_name{
+            width: 10%;
+        }
+        &_coins{
+            width: 10%;
+        }
+        &_created{
+            width: 20%;
+        }
+        &_deleted{
+            width: 20%;
+        }
+        &_register{
+            width: 10%;
+        }
+        &_control{
+            width: 15%;
+        }
+    }
+
+    &__item_button{
+        background: #00ba5d;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 10px 10px;
+        border-radius: 50px;
+        transition: all 0.3s;
+        box-shadow: 0 4px 9.6px 0.4px rgb(0 186 93 / 50%);
+        text-transform: uppercase;
+        &:hover{
+            background: #00dc6e;
+        }
+    }
+
+    &__item-drop-down{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #333;
+        border-radius: 7px;
+        color: #FFFFFF;
+        position: absolute;
+        overflow: hidden;
+        margin-top: 5px;
+        text-align: center;
+        &_item{
+            padding: 10px 45px;
+            width: 100%;
+            cursor: pointer;
+            background: #333;
+            &:hover{
+                background: #00ba5d;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.profile{
+    background: #FFFFFF;
+    &__menu-active{
+        left: 0;
+    }
+    &__menu-deactive{
+        margin-left: -200px;
+    }
+    &__router-name{
+        display: flex;
+        background: #FFFFFF;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 15px 20px;
+        color: #333;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    &__router{
+        padding: 0px;
+        width: 100%;
+    }
+}
